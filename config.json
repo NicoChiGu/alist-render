@@ -1,19 +1,19 @@
 {
   "force": false,
   "address": "0.0.0.0",
-  "port": "${PORT}",
+  "port": "{PORT}",
   "jwt_secret": "random generated",
   "token_expires_in": 48,
   "site_url": "",
   "cdn": "",
   "database": {
-    "type": "${DB_TYPE}",
-    "host": "${DB_HOST}",
-    "port": "${DB_PORT}",
-    "user": "${DB_USER}",
-    "password": "${DB_PASS}",
-    "name": "${DB_NAME}",
-    "table_prefix": "${DB_PREFIX}",
+    "type": "{DB_TYPE}",
+    "host": "{DB_HOST}",
+    "port": "{DB_PORT}",
+    "user": "{DB_USER}",
+    "password": "{DB_PASS}",
+    "name": "{DB_NAME}",
+    "table_prefix": "{DB_PREFIX}",
     "ssl_mode": false
   },
   "scheme": {
