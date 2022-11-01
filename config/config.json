@@ -13,7 +13,7 @@
     "port": 5432,
     "user": "#DBUSER",
     "password": "#DBPASS",
-    "name": "#DBNAME"",
+    "name": "#DBNAME",
     "table_prefix": "#DBPREFIX",
     "ssl_mode": ""
   },
