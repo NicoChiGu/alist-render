@@ -1,21 +1,21 @@
 {
   "force": false,
   "address": "0.0.0.0",
-  "port": 5244,
+  "port": $PORT,
   "jwt_secret": "random generated",
   "token_expires_in": 48,
   "site_url": "",
-  "cdn": "",
+  "cdn": $CDN,
   "database": {
-    "type": "sqlite3",
-    "host": "",
-    "port": 0,
-    "user": "",
-    "password": "",
-    "name": "",
-    "db_file": "data/data.db",
-    "table_prefix": "x_",
-    "ssl_mode": ""
+    "type": $DB_TYPE,
+    "host": $DB_HOST,
+    "port": $DB_PORT,
+    "user": $DB_USER,
+    "password": $DB_PASS,
+    "name": $DB_NAME,
+    "db_file": $DB_FILE,
+    "table_prefix": $DB_PREFIX,
+    "ssl_mode": $DB_SSL
   },
   "scheme": {
     "https": false,
