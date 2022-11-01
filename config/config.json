@@ -8,13 +8,13 @@
   "cdn": "https://www.npmjs.com/package/alist-web",
   
   "database": {
-    "type": "process.env.DBTYPE",
-    "host": "process.env.DBHOST",
+    "type": "${DBTYPE}",
+    "host": "${DBHOST}",
     "port": 5432,
-    "user": "process.env.DBUSER",
-    "password": "process.env.DBPASS",
-    "name": "process.env.DBNAME",
-    "table_prefix": "process.env.DBPREFIX",
+    "user": "${DBUSER}",
+    "password": "${DBPASS}",
+    "name": "${DBNAME}",
+    "table_prefix": "${DBPREFIX}",
     "ssl_mode": ""
   },
   "scheme": {
