@@ -15,7 +15,7 @@
     "password": "$DBPASS",
     "name": "$DBNAME",
     "table_prefix": "$DBPREFIX",
-    "ssl_mode": false
+    "ssl_mode": "n"
   },
   "scheme": {
     "https": false,
