@@ -9,12 +9,12 @@
   
   "database": {
     "type": "process.env.DBTYPE",
-    "host": "${DBHOST}",
+    "host": "process.env.DBHOST",
     "port": 5432,
-    "user": "$DBUSER",
-    "password": "$DBPASS",
-    "name": "$DBNAME",
-    "table_prefix": "$DBPREFIX",
+    "user": "process.env.DBUSER",
+    "password": "process.env.DBPASS",
+    "name": "process.env.DBNAME",
+    "table_prefix": "process.env.DBPREFIX",
     "ssl_mode": ""
   },
   "scheme": {
