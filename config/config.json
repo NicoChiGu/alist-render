@@ -8,7 +8,7 @@
   "cdn": "https://www.npmjs.com/package/alist-web",
   
   "database": {
-    "type": 'process.env.DBTYPE',
+    "type": "process.env.DBTYPE",
     "host": "${DBHOST}",
     "port": 5432,
     "user": "$DBUSER",
