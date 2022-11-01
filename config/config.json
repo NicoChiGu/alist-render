@@ -1,5 +1,5 @@
 {
-  "force": false,
+  "force": true,
   "address": "0.0.0.0",
   "port": "5244",
   "jwt_secret": "",
