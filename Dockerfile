@@ -4,4 +4,4 @@ WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-ENTRYPOINT [ "./alist", "server", "--debug", "--no-prefix", "--data /etc/secrets/config.json"]
+ENTRYPOINT [ "./alist", "server", "--debug", "--data /etc/secrets/config.json"]
