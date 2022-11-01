@@ -10,7 +10,7 @@
   "database": {
     "type": "$DBTYPE",
     "host": "$DBHOST",
-    "port": "$DBPORT",
+    "port": 5432,
     "user": "$DBUSER",
     "password": "$DBPASS",
     "name": "$DBNAME",
