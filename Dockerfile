@@ -4,4 +4,4 @@ WORKDIR /opt/alist/
 EXPOSE 5244
 #RUN mkdir -p /opt/alist/data
 #RUN wget -qO /opt/alist/data/config.json https://github.com/NicoChiGu/alist-render/raw/main/config/config.json
-CMD [ "./alist", "server", "--no-prefix" ]
+ENTRYPOINT [ "./alist", "-docker" ]
