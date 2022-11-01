@@ -4,4 +4,4 @@ WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-ENTRYPOINT [ "./alist", "-docker" ]
+ENTRYPOINT [ "./alist", "server", "--no-prefix"]
