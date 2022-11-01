@@ -6,14 +6,15 @@
   "token_expires_in": 48,
   "site_url": "",
   "cdn": "https://www.npmjs.com/package/alist-web",
+  
   "database": {
-    "type": "$DB_TYPE",
-    "host": "$DB_HOST",
-    "port": "$DB_PORT",
-    "user": "$DB_USER",
-    "password": "$DB_PASS",
-    "name": "$DB_NAME",
-    "table_prefix": "$DB_PREFIX",
+    "type": "$DBTYPE",
+    "host": "$DBHOST",
+    "port": "$DBPORT",
+    "user": "$DBUSER",
+    "password": "$DBPASS",
+    "name": "$DBNAME",
+    "table_prefix": "$DBPREFIX",
     "ssl_mode": false
   },
   "scheme": {
