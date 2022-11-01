@@ -4,4 +4,4 @@ WORKDIR /opt/alist/
 
 EXPOSE 5244
 
-ENTRYPOINT [ "./alist", "server", "--debug"]
+ENTRYPOINT [ "./alist", "server", "--debug", "--no-prefix"]
