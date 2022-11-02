@@ -1,5 +1,7 @@
 #!/bin/bash
-# "jwt_secret": "",
+#"jwt_secret": ""
+
+printf "正在配置config.json\n"
 cat <<-EOF > /opt/alist/data/config.json
 {
   "force": false,
