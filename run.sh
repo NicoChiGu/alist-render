@@ -36,4 +36,6 @@ cat <<-EOF > /opt/alist/data/config.json
 }
 EOF
 
+printf "正在启动\n"
+sleep 3
 /opt/alist/alist server --debug
