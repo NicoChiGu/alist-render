@@ -11,7 +11,7 @@ services:
       - key: PORT
         value: 5244
       - key: DB_TYPE
-        # value: sqlite3
+        # value: postgres
         sync: false
       - key: DB_HOST
         # value: db_host
@@ -30,4 +30,10 @@ services:
         sync: false
       - key: DB_TABLE_PREFIX
         # value: alist_
+        sync: false
+      - key: DB_SSL_MODE
+        # value: disable
+        sync: false
+      - APP_COMMAND:
+        # value: server
         sync: false
