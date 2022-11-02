@@ -1,4 +1,5 @@
 #!/bin/bash
+printf "|----------------> \n"
 printf "Configuring config.json\n"
 touch /opt/alist/data/config.json
 cat <<-EOF > /opt/alist/data/config.json
@@ -36,7 +37,10 @@ cat <<-EOF > /opt/alist/data/config.json
   }
 }
 EOF
-
+printf "|----------------> \n"
+printf "START ARIA2 SERVICE \n"
+nohup /usr/bin/aria2c --enable-rpc &
+printf "|----------------> \n"
 printf "START SERVER NOW \n"
 sleep 3
 /opt/alist/alist ${APP_COMMAND}
