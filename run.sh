@@ -1,10 +1,10 @@
 #!/bin/bash
+# "jwt_secret": "",
 cat <<-EOF > /opt/alist/data/config.json
 {
   "force": false,
   "address": "0.0.0.0",
   "port": 5244,
-  "jwt_secret": "",
   "token_expires_in": 48,
   "site_url": "",
   "cdn": "https://cdn.jsdelivr.net/npm/alist-web@$version/dist/",
