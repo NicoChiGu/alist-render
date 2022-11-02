@@ -3,5 +3,5 @@ LABEL MAINTAINER="i@nn.ci"
 WORKDIR /opt/alist/
 
 EXPOSE 5244
-RUN cp /etc/secrets/config.json /opt/alist/data/config.json
+RUN cp config_temp.json /opt/alist/data/config.json
 ENTRYPOINT [ "./alist", "server", "--debug"]
