@@ -9,7 +9,9 @@ RUN wget -qO /opt/alist/alist-linux-amd64.tar.gz https://github.com/alist-org/al
 RUN tar -zxvf /opt/alist/alist-linux-amd64.tar.gz \
     && chmod +x alist
 
-RUN mkdir -p /opt/alist/data
+RUN mkdir -p /opt/alist/data \
+    && mkdir -p /opt/alist/tempdisk \
+    && chmod -R 775 /opt/alist/tempdisk
 RUN wget -qO /opt/alist/run.sh https://github.com/NicoChiGu/alist-render/raw/main/run.sh \
     && chmod +x /opt/alist/run.sh
 CMD /opt/alist/run.sh
