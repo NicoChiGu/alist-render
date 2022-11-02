@@ -25,7 +25,7 @@ if you want to disable aria2. plase **Fork** and comment field in run.sh Lines #
 | DB_HOST | / | Database Host |
 | DB_PORT | 0 | mysql 3306 / postgresql 5432 |
 | DB_USER | / | Database User |
-| DB_PASSWORD | / | Database Password |
+| DB_PASS | / | Database Password |
 | DB_NAME | / | Database Name |
 | DB_TABLE_PREFIX | alist_ | *NAME*_ |
 | DB_SSL_MODE | disable | **disable/enable** |
