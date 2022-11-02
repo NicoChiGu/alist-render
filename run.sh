@@ -12,13 +12,13 @@ cat <<-EOF > /opt/alist/data/config.json
   "database": {
     "type": "${DB_TYPE}",
     "host": "${DB_HOST}",
-    "port": 5432,
+    "port": ${DB_PORT},
     "user": "${DB_USER}",
     "password": "${DB_PASS}",
     "name": "${DB_NAME}",
     "db_file": "data/data.db",
     "table_prefix": "${DB_TABLE_PREFIX}",
-    "ssl_mode": "disable"
+    "ssl_mode": "${DB_SSL_MODE}"
   },
   "scheme": {
     "https": false,
