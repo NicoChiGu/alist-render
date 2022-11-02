@@ -37,10 +37,16 @@ cat <<-EOF > /opt/alist/data/config.json
   }
 }
 EOF
-printf "|----------------> \n"
+
+printf "|------Configuring  Complete-------> \n"
+
+if ${ARIA_STATUS}=true
+then
 printf "START ARIA2 SERVICE \n"
 nohup /usr/bin/aria2c --enable-rpc &
-printf "|----------------> \n"
-printf "START SERVER NOW \n"
+printf "|------ARIA2  ONLINE-------> \n"
+
+else
+printf "START ALIST NOW \n"
 sleep 3
 /opt/alist/alist ${APP_COMMAND}
