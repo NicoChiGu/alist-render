@@ -1,18 +1,24 @@
 # alist-render
+
+### Building Container Based on Debian Stable
+### 基于Debian Stable 构建Docker容器
+
 [切换中文](./README_CN.md)
+
+
 ### Deploy Alist to Render
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
-
-### database
+ 
+## database
 use Render postgresql or others database
 
-
-### ARIA2 On this repository
+ 
+## ARIA2 On this repository
 if you want to disable aria2. plase **Fork** and comment field in run.sh Lines #41 to #43
 
 
-### ENV 
+## ENV 
 | Key | Default Value | Info |
 |:---------|:---------|:---------|
 | DB_TYPE | postgres | mysql / postgres |
