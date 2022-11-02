@@ -14,7 +14,7 @@
 | DB_HOST | / | 数据库连接地址 |
 | DB_PORT | 0 | mysql 3306 / postgresql 5432 |
 | DB_USER | / | 数据库用户名 |
-| DB_PASSWORD | / | 数据库用户密码 |
+| DB_PASS | / | 数据库用户密码 |
 | DB_NAME | / | 数据库名称 |
 | DB_TABLE_PREFIX | alist_ | 数据前缀*NAME*_ |
 | DB_SSL_MODE | disable | **disable/enable** |
