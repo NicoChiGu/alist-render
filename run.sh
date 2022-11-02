@@ -1,5 +1,5 @@
 #!/bin/bash
-#"jwt_secret": ""
+#{"jwt_secret": ""}
 
 printf "正在配置config.json\n"
 touch /opt/alist/data/config.json
