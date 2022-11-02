@@ -1,21 +1,22 @@
+#!/bin/bash
 cat <<-EOF > /opt/alist/data/config.json
 {
   "force": false,
   "address": "0.0.0.0",
   "port": 5244,
-  "jwt_secret": "random generated",
+  "jwt_secret": "",
   "token_expires_in": 48,
   "site_url": "",
   "cdn": "https://cdn.jsdelivr.net/npm/alist-web@$version/dist/",
   "database": {
-    "type": "postgres",
-    "host": "dpg-cdgob582i3mnkshnv350-a",
+    "type": "${DB_TYPE}",
+    "host": "${DB_HOST}",
     "port": 5432,
-    "user": "terata2",
-    "password": "JVHdpPTBCIyz6wt4DkTOEGoxnhZO5HKS",
-    "name": "terata2",
+    "user": "${DB_USER}",
+    "password": "${DB_PASS}",
+    "name": "${DB_NAME}",
     "db_file": "data/data.db",
-    "table_prefix": "alist_",
+    "table_prefix": "${DB_TABLE_PREFIX}",
     "ssl_mode": "disable"
   },
   "scheme": {
