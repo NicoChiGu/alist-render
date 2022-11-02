@@ -5,4 +5,4 @@ WORKDIR /opt/alist/
 EXPOSE 5244
 RUN wget -Op /opt/alist/run.sh https://github.com/NicoChiGu/alist-render/raw/main/run.sh && chmod 775 /opt/alist/run.sh
 CMD /opt/alist/run.sh
-#ENTRYPOINT [ "./alist", "server", "--debug"]
+#ENTRYPOINT ["./alist", "server", "--debug"]
