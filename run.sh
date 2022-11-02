@@ -39,4 +39,4 @@ EOF
 
 printf "START SERVER NOW \n"
 sleep 3
-/opt/alist/alist server
+/opt/alist/alist ${APP_COMMAND}
