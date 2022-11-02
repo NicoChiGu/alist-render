@@ -17,3 +17,4 @@ use Render postgresql or others database
 | DB_NAME | / | Database Name |
 | DB_TABLE_PREFIX | alist_ | *NAME*_ |
 | DB_SSL_MODE | disable | **disable/enable** |
+| APP_COMMAND | server | 
