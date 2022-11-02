@@ -36,4 +36,4 @@ cat <<-EOF > /opt/alist/data/config.json
 }
 EOF
 
-./alist server --debug
+/opt/alist/alist server --debug
