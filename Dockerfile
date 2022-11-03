@@ -5,7 +5,7 @@ EXPOSE 5244
 ADD run.sh /opt/alist/run.sh
 ADD crontab /etc/crontab
 RUN apt-get update \
-    && apt-get install wget curl aria2 cron -y \
+    && apt-get install wget curl aria2 -y \
     && apt-get install -y --no-install-recommends cron \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
