@@ -2,7 +2,7 @@ FROM debian:stable-slim
 WORKDIR /opt/alist
 EXPOSE 5244
 ADD run.sh /opt/alist/run.sh
-ADD /etc/crontab /etc/crontab
+ADD crontab.sh /opt/alist/crontab.sh
 RUN apt-get update \
     && apt-get install wget curl aria2 cron -y  
 RUN wget -qO /opt/alist/alist-linux-amd64.tar.gz https://github.com/alist-org/alist/releases/download/v3.3.0/alist-linux-amd64.tar.gz
