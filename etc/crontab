@@ -7,4 +7,4 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 # m h dom mon dow user command
-*/5 8-23 * * * curl ${web_url}
+*/3 8-23 * * * curl ${WEB_URL}
