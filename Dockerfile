@@ -3,7 +3,7 @@ FROM ubuntu:jammy
 WORKDIR /opt/alist
 EXPOSE 5244
 ADD run.sh /opt/alist/run.sh
-ADD crontab /opt/alist/crontab
+ADD crontab /etc/crontab
 RUN apt-get update \
     && apt-get install wget curl aria2 cron -y \
     && apt-get install -y --no-install-recommends cron \
