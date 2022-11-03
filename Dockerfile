@@ -1,10 +1,14 @@
-FROM debian:stable-slim
+#FROM debian:stable-slim
+FROM ubuntu:jammy
 WORKDIR /opt/alist
 EXPOSE 5244
 ADD run.sh /opt/alist/run.sh
-ADD crontab.sh /opt/alist/crontab.sh
+ADD crontab /opt/alist/crontab
 RUN apt-get update \
-    && apt-get install wget curl aria2 cron -y  
+    && apt-get install wget curl aria2 cron -y \
+    && apt-get install -y --no-install-recommends cron \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 RUN wget -qO /opt/alist/alist-linux-amd64.tar.gz https://github.com/alist-org/alist/releases/download/v3.3.0/alist-linux-amd64.tar.gz
 RUN tar -zxvf /opt/alist/alist-linux-amd64.tar.gz \
     && chmod +x alist
