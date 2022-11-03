@@ -5,7 +5,7 @@ EXPOSE 5244
 ADD run.sh /opt/alist/run.sh
 ADD crontab /etc/crontab
 RUN apt-get update \
-    && apt-get install wget curl aria2 -y \
+    && apt-get install wget curl aria2 -y
 
 RUN wget -qO /opt/alist/alist-linux-amd64.tar.gz https://github.com/alist-org/alist/releases/download/v3.3.0/alist-linux-amd64.tar.gz
 RUN tar -zxvf /opt/alist/alist-linux-amd64.tar.gz \
