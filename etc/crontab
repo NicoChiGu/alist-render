@@ -1,0 +1,9 @@
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the newversion when you edit this file.
+# This file also has a username field, that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# m h dom mon dow user command
+*/5 8-23 * * * curl ${web_url}
