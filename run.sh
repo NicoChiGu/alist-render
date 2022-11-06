@@ -42,8 +42,8 @@ printf "START ARIA2 SERVICE \n"
 nohup /usr/bin/aria2c --enable-rpc &
 printf "|----------ARIA2  ONLINE-----------> \n"
 printf "START CRONTAB SERVICE \n"
-nohup bash /opt/alist/crontab.sh &
-printf "|----------CRONTAB  ONLINE-----------> \n"
+nohup bash /opt/alist/cron.sh &
+printf "|----------CRON  ONLINE-----------> \n"
 printf "START ALIST NOW \n"
 sleep 3
 /opt/alist/alist ${APP_COMMAND}
