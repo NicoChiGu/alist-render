@@ -2,6 +2,6 @@
 sleep 5
 while true
 do
-curl -o https://${WEB_URL} /opt/alist/cron.tmp
+curl -o /opt/alist/cron.tmp https://${WEB_URL} 
 sleep 2m
 done
