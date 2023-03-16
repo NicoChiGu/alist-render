@@ -9,7 +9,7 @@ cat <<-EOF > /opt/alist/data/config.json
   "port": 5244,
   "token_expires_in": 48,
   "site_url": "",
-  "cdn": "${CDN}",
+  "cdn": "https://cdn.jsdelivr.net/gh/alist-org/web-dist@main/dist/",
   "database": {
     "type": "${DB_TYPE}",
     "host": "${DB_HOST}",
