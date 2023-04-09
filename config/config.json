@@ -5,7 +5,7 @@
   "jwt_secret": "",
   "token_expires_in": 48,
   "site_url": "",
-  "cdn": "",
+  "cdn": "https://cdn.jsdelivr.net/npm/alist-org/web-dist@main/dist/",
   
   "database": {
     "type": "(process.env.DBTYPE)",
