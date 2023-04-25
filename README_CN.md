@@ -11,12 +11,14 @@
 
 <br>
 
+## 其他说明:
 使用Render postgresql或其他数据库
 
 不使用数据库以Docker容器运行不会保留任何本地数据(付费方案除外),该方案不适用sqlite3
 
 Dockerfile构建中包含Aria2.如不需要自行删除 [Dockefile](https://github.com/NicoChiGu/alist-render/blob/main/Dockerfile) 中第8行 `aria2`
 
+本Repo中预置一个非持久性文件夹,适用于一般大小的文件临时储存或转存,使用只需要在Alist添加`本地磁盘`地址为 `/opt/alist/tempdisk`
 
 <br>
 
