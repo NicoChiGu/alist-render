@@ -34,7 +34,7 @@ cat <<-EOF > /opt/alist/data/config.json
     "max_size": 10,
     "max_backups": 5,
     "max_age": 28,
-    "compress": false
+    "compress": true
   }
 }
 EOF
