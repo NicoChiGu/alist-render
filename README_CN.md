@@ -3,16 +3,24 @@
 ### 将Alist部署到 Render
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
-### 数据库
-使用Render postgresql或其他数据库
-不使用数据库以Docker容器运行不会保留任何本地数据,该方案不适用sqlite3
-Dockerfile构建中包含Aria2.如不需要自行删除 [Dockefile](https://github.com/NicoChiGu/alist-render/blob/main/Dockerfile) 中第8行" aria2
+<br>
 
-### !!Render已修改Free Plan计划:
+## !!Render已修改Free Plan计划:
 #### PostgreSQL在Free Plan计划中 会在每次创建后有效90天,90天过后自动暂停并有14天救赎期(通过升级付费计划),否则数据库中的数据将会删除. [详细请看文档](https://render.com/docs/free#free-postgresql-databases)
-#### 推荐使用(Supabase)[https://supabase.com/] FreePlan计划允许最多创建2个数据库,每个数据库大小2G，【数据库14天内没有API访问/数据访问 将会邮件提醒暂停,需手动开启,数据不会删除】
+#### 推荐使用(Supabase)[https://supabase.com/] PostgreSQL | FreePlan计划允许最多创建2个数据库,每个数据库大小2G，【数据库14天内没有API访问/数据访问 将会邮件提醒暂停,需手动开启,数据不会删除】
 
-### ENV 变量
+<br>
+
+## 数据库
+使用Render postgresql或其他数据库
+
+不使用数据库以Docker容器运行不会保留任何本地数据,该方案不适用sqlite3
+
+### Dockerfile构建中包含Aria2.如不需要自行删除 [Dockefile](https://github.com/NicoChiGu/alist-render/blob/main/Dockerfile) 中第8行" aria2
+
+<br>
+
+## ENV 变量
 | Key | Default Value | Info |
 |:---------|:---------|:---------|
 | DB_TYPE | postgres | mysql / postgres |
