@@ -35,5 +35,5 @@ services:
         # value: disable
         sync: false
       - key: APP_COMMAND
-        # value: server
+        value: server
         sync: false
