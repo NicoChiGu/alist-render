@@ -8,8 +8,6 @@ services:
     plan: free # optional (defaults to starter)
     healthCheckPath: /
     envVars:
-      - key: ALIST_VERSION
-        sync: false
       - key: PORT
         value: 5244
       - key: DB_TYPE
