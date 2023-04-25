@@ -36,4 +36,4 @@ services:
         sync: false
       - key: APP_COMMAND
         value: server
-        sync: false
+        sync: true
