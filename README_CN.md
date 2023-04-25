@@ -7,7 +7,6 @@
 
 ## !!Render已修改Free Plan计划:
 #### PostgreSQL在Free Plan计划中 会在每次创建后有效90天,90天过后自动暂停并有14天救赎期(通过升级付费计划),否则数据库中的数据将会删除. [详细请看文档](https://render.com/docs/free#free-postgresql-databases)
-#### 推荐使用(Supabase)[https://supabase.com/] PostgreSQL | `FreePlan`计划允许最多创建2个数据库,每个数据库大小`2G`，【数据库14天内没有API访问/数据访问 将会邮件提醒暂停,需手动开启,数据不会删除】
 
 <br>
 
