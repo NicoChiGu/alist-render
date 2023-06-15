@@ -4,7 +4,7 @@ services:
     name: alist
     env: docker
     repo: https://github.com/NicoChiGu/alist-render.git # optional
-    region: singapore # optional (defaults to oregon)
+    region: oregon # optional (defaults to oregon)singapore
     plan: free # optional (defaults to starter)
     healthCheckPath: /
     envVars:
